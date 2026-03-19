@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 1: Форма "Личная"</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+        form { background: white; padding: 20px; border-radius: 8px; max-width: 500px; margin: 0 auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input[type="text"], input[type="password"], input[type="number"], textarea, select {
+            width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box;
+        }
+        .date-group { display: flex; gap: 10px; }
+        .checkbox-group { margin-top: 5px; font-weight: normal; }
+        button { margin-top: 20px; padding: 10px 20px; background: #28a745; color: white; border: none; cursor: pointer; }
+        a { display: block; text-align: center; margin-top: 20px; color: #007bff; }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="POST">
+        <h2>Форма "Личная"</h2>
+
+        <!-- Личные данные -->
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="surname">Фамилия:</label>
+        <input type="text" id="surname" name="surname" required>
+
+        <label for="address">Адрес:</label>
+        <input type="text" id="address" name="address">
+
+        <!-- Дата рождения разными способами (Требование задания) -->
+        <label>Дата рождения:</label>
+        <div class="date-group">
+            <!-- Способ 1: Select -->
+            <select name="day">
+                <option value="" disabled selected>День</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <!-- и так далее... -->
+            </select>
+
+            <!-- Способ 2: Input с Datalist -->
+            <input list="months" name="month" placeholder="Месяц">
+            <datalist id="months">
+                <option value="Январь">
+                <option value="Февраль">
+                <option value="Март">
+                <option value="Апрель">
+            </datalist>
+
+            <!-- Способ 3: Input Number -->
+            <input type="number" name="year" placeholder="Год" min="1900" max="2024">
+        </div>
+
+        <!-- Интересы (может быть несколько - используем checkbox) -->
+        <label>Интересы:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="sport" name="interests" value="sport"> <label style="display:inline" for="sport">Спорт</label><br>
+            <input type="checkbox" id="music" name="interests" value="music"> <label style="display:inline" for="music">Музыка</label><br>
+            <input type="checkbox" id="coding" name="interests" value="coding"> <label style="display:inline" for="coding">Программирование</label>
+        </div>
+
+        <!-- Учетная запись -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <!-- Комментарий (многострочное поле) -->
+        <label for="comment">Комментарий:</label>
+        <textarea id="comment" name="comment" rows="4"></textarea>
+
+        <button type="submit">Отправить</button>
+
+        <!-- Гиперссылка на другой документ (Требование задания) -->
+        <a href="2.html">Перейти к Зачетной книжке (Задание 2)</a>
+    </form>
+
+</body>
+</html>

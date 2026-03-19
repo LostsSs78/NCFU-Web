@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 2: Зачетная книжка</title>
+    <style>
+        body { font-family: "Times New Roman", serif; padding: 20px; }
+        form { border: 2px solid #333; padding: 20px; width: 600px; }
+        ul { list-style-type: none; padding: 0; } /* Убираем маркеры списка для компоновки */
+        li { border-bottom: 1px dashed #ccc; padding: 10px 0; }
+        .subject-name { font-weight: bold; font-size: 1.1em; display: inline-block; width: 200px;}
+        .grade-options { display: inline-block; }
+    </style>
+</head>
+<body>
+
+    <h1>Электронная зачетная книжка</h1>
+
+    <form>
+        <p>Отметьте сданные дисциплины и выберите полученную оценку:</p>
+        
+        <!-- Использование списка для компоновки формы (Требование задания) -->
+        <ul>
+            <li>
+                <!-- Флажок (checkbox) -->
+                <label>
+                    <input type="checkbox" name="subject_done" value="html"> 
+                    <span class="subject-name">Web-технологии</span>
+                </label>
+                
+                <!-- Переключатели (radio) -->
+                <div class="grade-options">
+                    Оценка: 
+                    <label><input type="radio" name="grade_html" value="5"> 5</label>
+                    <label><input type="radio" name="grade_html" value="4"> 4</label>
+                    <label><input type="radio" name="grade_html" value="3"> 3</label>
+                </div>
+            </li>
+
+            <li>
+                <label>
+                    <input type="checkbox" name="subject_done" value="math"> 
+                    <span class="subject-name">Высшая математика</span>
+                </label>
+                
+                <div class="grade-options">
+                    Оценка: 
+                    <label><input type="radio" name="grade_math" value="5"> 5</label>
+                    <label><input type="radio" name="grade_math" value="4"> 4</label>
+                    <label><input type="radio" name="grade_math" value="3"> 3</label>
+                </div>
+            </li>
+
+            <li>
+                <label>
+                    <input type="checkbox" name="subject_done" value="eng"> 
+                    <span class="subject-name">Иностранный язык</span>
+                </label>
+                
+                <div class="grade-options">
+                    Оценка: 
+                    <label><input type="radio" name="grade_eng" value="5"> 5</label>
+                    <label><input type="radio" name="grade_eng" value="4"> 4</label>
+                    <label><input type="radio" name="grade_eng" value="3"> 3</label>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Использование маркированного списка для легенды -->
+        <h3>Расшифровка:</h3>
+        <ul style="list-style-type: square; color: #555;">
+            <li>5 - Отлично</li>
+            <li>4 - Хорошо</li>
+            <li>3 - Удовлетворительно</li>
+        </ul>
+
+        <button type="submit">Сохранить ведомость</button>
+        <br><br>
+        <a href="1.html">Вернуться к Личной анкете</a>
+    </form>
+
+</body>
+</html>

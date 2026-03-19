@@ -1,0 +1,159 @@
+/* Общие стили страницы */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 0;
+}
+
+/* Основной текст */
+p {
+    margin: 15px 20px;
+    text-align: justify;
+    color: #444444;
+}
+
+/* Заголовки 1-4 уровней */
+h1 {
+    font-size: 32px;
+    color: #1a3c6e;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #2a5d9f;
+    margin: 20px;
+    border-bottom: 2px solid #2a5d9f;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #3b75c3;
+    margin: 15px 20px;
+}
+
+h4 {
+    font-size: 20px;
+    color: #4f8edc;
+    margin: 10px 20px;
+    font-style: italic;
+}
+
+/* Гиперссылки */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #663399;
+}
+
+/* Меню 1-4 уровней */
+menu, ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* 1 уровень */
+.menu-level-1 > li {
+    background-color: #1a3c6e;
+    margin: 2px 0;
+    padding: 10px;
+}
+
+.menu-level-1 > li > a {
+    color: white;
+    display: block;
+}
+
+/* 2 уровень */
+.menu-level-2 {
+    margin-left: 20px;
+}
+
+.menu-level-2 > li {
+    background-color: #2a5d9f;
+    margin: 2px 0;
+    padding: 8px;
+}
+
+.menu-level-2 > li > a {
+    color: white;
+    display: block;
+}
+
+/* 3 уровень */
+.menu-level-3 {
+    margin-left: 20px;
+}
+
+.menu-level-3 > li {
+    background-color: #3b75c3;
+    margin: 2px 0;
+    padding: 6px;
+}
+
+.menu-level-3 > li > a {
+    color: white;
+    display: block;
+}
+
+/* 4 уровень */
+.menu-level-4 {
+    margin-left: 20px;
+}
+
+.menu-level-4 > li {
+    background-color: #4f8edc;
+    margin: 2px 0;
+    padding: 5px;
+}
+
+.menu-level-4 > li > a {
+    color: white;
+    display: block;
+}
+
+/* Таблицы и ячейки */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #2a5d9f;
+    color: white;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #dfefff;
+}

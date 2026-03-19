@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 8 - Таблица принтеров</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+        table {
+            width: 90%;        
+            margin: 0 auto;      
+            border-collapse: collapse; 
+            border: 1px solid gray;
+        }
+        td, th {
+            border: 1px solid #999;
+            padding: 5px;
+        }
+
+        .data-row td {
+            background-color: #CCCCFF;
+            text-align: center;
+        }
+        .model-name {
+            text-align: left !important;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr style="background-color: #BDBD7E; font-weight: bold; text-align: center;">
+            <td colspan="5">Наиболее популярные модели струйных принтеров</td>
+        </tr>
+
+        <tr style="background-color: #FFCC99; font-weight: bold; text-align: center;">
+            <td>Изготовитель,<br>название модели</td>
+            <td>Формат<br>печати</td>
+            <td>Количество<br>цветов</td>
+            <td>Макс.<br>разрешение<br>(dpi)</td>
+            <td>Макс.<br>скорость<br>печати<br>(стр./мин.)</td>
+        </tr>
+
+        <tr style="background-color: black; color: white; font-weight: bold;">
+            <td colspan="5">Hewlett Packard</td>
+        </tr>
+
+        <tr class="data-row">
+            <td class="model-name">HP DeskJet 690C+</td>
+            <td rowspan="2">A4</td> 
+            <td>6</td>
+            <td>600x600</td>
+            <td>5</td>
+        </tr>
+
+        <tr class="data-row">
+            <td class="model-name">HP DeskJet 970Cxi</td>
+            <td>4</td>
+            <td>2400x1200</td>
+            <td>12</td>
+        </tr>
+
+        <tr style="background-color: black; color: white; font-weight: bold;">
+            <td colspan="5">Epson</td>
+        </tr>
+
+        <tr class="data-row">
+            <td class="model-name">Epson Stylus Color 440</td>
+            <td rowspan="2">A4</td>
+            <td>4</td>
+            <td>720x720</td>
+            <td>4</td>
+        </tr>
+
+        <tr class="data-row">
+            <td class="model-name">Epson Stylus Color 900</td>
+            <td>1440x720</td>
+            <td>12</td>
+        </tr>
+    </table>
+</body>
+</html>
