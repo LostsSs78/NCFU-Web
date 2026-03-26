@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Шрифты в CSS3</title>
+    <style>
+        p.under {
+            text-decoration: underline;
+        }
+
+        p.over {
+            text-decoration: overline;
+        }
+
+        p.line {
+            text-decoration: line-through;
+        }
+
+        p.mixed {
+            text-decoration: underline line-through;
+        }
+
+        a.none {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="under">Это подчеркнутый текст.</p>
+        <p class="over">Это надчеркнутый текст</p>
+        <p class="line">Это зачеркнутый текст</p>
+        <p class="mixed">Это подчеркнутый и зачеркнутый текст</p>
+        <p>Не подчеркнутая <a href="index.php" class="none">ссылка<a></p>
+    </div>
+</body>
+
+</html>
