@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Свойство display</title>
+    <style>
+        .block {
+            display: block;
+            background: #ddd;
+        }
+
+        .inlineBlock {
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+            background: #aaa;
+        }
+
+        .runin {
+            display: run-in;
+            color: red;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Обычный <span class="block">Блочный span</span></p>
+
+    <p>
+        <span class="inlineBlock">inline-block</span>
+        <span class="inlineBlock">inline-block</span>
+    </p>
+
+    <div class="runin">run-in элемент</div>
+    <p>Текст после run-in</p>
+
+    <p>Первый абзац</p>
+    <p class="hidden">Скрытый абзац</p>
+    <p>Третий абзац</p>
+
+</body>
+
+</html>

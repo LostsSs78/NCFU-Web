@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Горизонтальное меню</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        a {
+            display: block;
+            padding: 10px 20px;
+            background: #eee;
+            border: 1px solid #ccc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background: #333;
+            color: white;
+        }
+
+        ul:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">О сайте</a></li>
+    </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Собственная блочная верстка</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #header {
+            background: #4CAF50;
+            padding: 20px;
+            color: white;
+        }
+
+        #nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #nav li {
+            display: inline;
+        }
+
+        #nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+        }
+
+        #sidebar {
+            float: left;
+            width: 20%;
+            background: #f4a261;
+            padding: 15px;
+        }
+
+        #main {
+            margin-left: 20%;
+            background: #e9c46a;
+            padding: 15px;
+        }
+
+        #menu {
+            float: left;
+            width: 150px;
+            background: #2a9d8f;
+        }
+
+        #content {
+            margin-left: 160px;
+            background: #f1faee;
+            padding: 10px;
+        }
+
+        .run {
+            display: run-in;
+            font-weight: bold;
+        }
+
+        .inlineBlock {
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+            background: #457b9d;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #footer {
+            clear: both;
+            background: #264653;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">Мой сайт</div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+
+    <div id="sidebar">Боковая панель</div>
+
+    <div id="main">
+        <div id="menu">Вложенное меню</div>
+        <div id="content">
+            <div class="run">Run-in заголовок</div>
+            <p>Текст после run-in</p>
+
+            <div class="inlineBlock">1</div>
+            <div class="inlineBlock">2</div>
+
+            <p class="hidden">Этот текст скрыт</p>
+        </div>
+    </div>
+
+    <div id="footer">Футер сайта</div>
+
+</body>
+
+</html>
